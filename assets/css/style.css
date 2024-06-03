@@ -1,0 +1,80 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #c5c5c5;
+  color: #212529;
+}
+
+#header {
+  background-color: #007BFF;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+}
+#header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+nav ul li {
+  margin: 0 15px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+#main {
+  padding: 20px;
+}
+#main article {
+  margin-bottom: 20px;
+}
+#main article h2 {
+  color: #007BFF;
+  border-bottom: 2px solid #6C757D;
+  padding-bottom: 10px;
+}
+#main article p {
+  line-height: 1.6;
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+#footer h2 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+}
+
+form#contactForm input[type=text],
+form#contactForm input[type=email],
+form#contactForm textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+form#contactForm input[type=submit] {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+form#contactForm input[type=submit]:hover {
+  background-color: #0062cc;
+}
