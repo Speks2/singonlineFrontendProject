@@ -2,13 +2,17 @@ $primary-color: #007BFF !default;
 $secondary-color: #6C757D;
 $third-color: #10bb07ee;
 @import 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap';
+@use 'variables';
+@use 'mixins';
 
 // Body styling
 body {
   font-family: Arial, sans-serif;
   background-color: #c5c5c5;
   color: #212529;
-  font-family: "Roboto", sans-serif;
+  font-family: variables.$font-stack;
+    color: variables.$primary-color;
+    @include mixins.center;
 }
 
 // Header styling
@@ -27,6 +31,7 @@ body {
   h1 {
     margin: 0;
   }
+  
 
 }
 
@@ -49,11 +54,17 @@ section {
   }
   
 }
+
 //Footer styling
 footer {
     h3 {
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 2rem;   
+        @mixin center {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
     }
     position: fixed;
     bottom: 0;
@@ -83,9 +94,6 @@ footer {
   
   }
 }
-
-
-
 
 
 
