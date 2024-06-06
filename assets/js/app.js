@@ -36,8 +36,8 @@ async function renderSongs() {
 
         songListElement.appendChild(songTitleElement);
     });
+     
 }
-
 // Call renderSongs when the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', () => {
     renderSongs();
