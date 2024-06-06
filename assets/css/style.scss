@@ -1,101 +1,132 @@
-$primary-color: #007BFF;
+$primary-color: #007BFF !default;
 $secondary-color: #6C757D;
+$third-color: #10bb07ee;
+@import 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap';
 
 // Body styling
 body {
   font-family: Arial, sans-serif;
   background-color: #c5c5c5;
   color: #212529;
+  font-family: "Roboto", sans-serif;
 }
 
 // Header styling
-#header {
+ header {
   background-color: $primary-color;
   color: white;
   padding: 20px;
   text-align: center;
-  position: fixed;
+  position: 
+  fixed;
+  border: 4px black solid;
   top: 0;
+  margin-left: 25%;
 
   h1 {
     margin: 0;
   }
-}
 
-// Navigation styling
-nav {
-  ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-
-    li {
-      margin: 0 15px;
-
-      a {
-        color: white;
-        text-decoration: none;
-
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-    }
-  }
 }
 
 // Main content styling
-#main {
-  padding: 20px;
-
+$translucent-white: $primary-color;
+section {
+  padding: 1rem;
   article {
-    margin-bottom: 20px;
-
+    margin-top: 20%;
+    
     h2 {
       color: $primary-color;
-      border-bottom: 2px solid $secondary-color;
-      padding-bottom: 10px;
+      border-bottom: 5px solid $third-color;
+      padding-bottom: 1rem;
+      border-width: 5px;
+      border: 4px black solid;
+      border-radius: 10px;
     }
 
-    p {
-      line-height: 1.6;
-    }
   }
+  
 }
 //Footer styling
-#footer {
-    h2 {
+footer {
+    h3 {
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 20px;
+        font-size: 2rem;   
     }
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
+    height: 15%;
+    background-color: red;
+    border: 4px black solid;
 }
 
-// Form styling
-form#contactForm {
-  input[type="text"],
-  input[type="email"],
-  textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
 
-  input[type="submit"] {
-    background-color: $primary-color;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
 
-    &:hover {
-      background-color: darken($primary-color, 10%);
-    }
-  }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Navigation styling
+// nav {
+//   ul {
+//     list-style: none;
+//     padding: 0;
+//     display: flex;
+//     justify-content: center;
+
+//     li {
+//       margin: 0 15px;
+
+//       a {
+//         color: white;
+//         text-decoration: none;
+
+//         &:hover {
+//           text-decoration: underline;
+//         }
+//       }
+//     }
+//   }
+// }
+
+
+
+// // Form styling
+// form.contactForm {
+//   input[type="text"],
+//   input[type="email"],
+//   textarea {
+//     width: 100%;
+//     padding: 10px;
+//     margin-bottom: 10px;
+//     border: 1px solid #ccc;
+//     border-radius: 5px;
+//   }
+
+//   input[type="submit"] {
+//     background-color: $primary-color;
+//     color: white;
+//     border: none;
+//     padding: 10px 20px;
+//     cursor: pointer;
+
+//     &:hover {
+//       background-color: darken($primary-color, 10%);
+//     }
+//   }
+// }
