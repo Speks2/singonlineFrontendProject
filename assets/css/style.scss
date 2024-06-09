@@ -36,22 +36,22 @@ section {
     margin-top: 5rem;
     }
     h2 {
-      cursor: pointer;
       border-bottom: 5px solid;
       padding-bottom: 1rem;
       border-width: 5px;
       border: 4px #c90a0a solid;
     }
 }
-
+//Songs styling MAIN MAIN MAIN
 #song-list {
   h2 {
     border-radius: 10px;
     &:not(:first-child) {
       background-color: $primary-color;
+      cursor: pointer;
       &:hover {
-        background-color: #58ace4;
-        transition: 500ms;
+        background-color: #25c5da;
+        transition: background-color 1.5s ease-out, transform 1s ease-out;
       }
     }
   }
