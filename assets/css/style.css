@@ -25,16 +25,39 @@ section {
   padding: 1rem;
 }
 section article {
+  border-radius: 10px;
   animation: backgroundChange 10s infinite alternate;
   margin-top: 5rem;
 }
 section h2 {
-  color: #1d72ce;
+  cursor: pointer;
   border-bottom: 5px solid;
   padding-bottom: 1rem;
   border-width: 5px;
   border: 4px #c90a0a solid;
+}
+
+#song-list h2 {
   border-radius: 10px;
+}
+#song-list h2:not(:first-child) {
+  background-color: #1d72ce;
+}
+#song-list h2:not(:first-child):hover {
+  background-color: #58ace4;
+  transition: 500ms;
+}
+
+.song-details {
+  display: none;
+  padding-left: 20px;
+}
+
+.song-details.open {
+  display: block;
+  border: 3px rgb(0, 0, 0) solid;
+  border-radius: 10px;
+  font-size: 1.2rem;
 }
 
 footer {
@@ -85,18 +108,15 @@ footer h3 {
     padding: 1rem;
   }
   section article {
-    background-color: rgb(227, 227, 227);
     margin-top: 5rem;
     border-radius: 10px;
   }
   section article h2 {
-    color: #1d72ce;
-    border-bottom: 5px solid #c90a0a;
     padding-bottom: 1rem;
     border-width: 5px;
     border: 4px rgb(0, 0, 0) solid;
     border-radius: 10px;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   }
   body {

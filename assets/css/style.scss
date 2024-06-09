@@ -31,19 +31,43 @@ body {
 section {
   padding: 1rem;
   article {
+    border-radius: 10px;
     animation: backgroundChange 10s infinite alternate;
     margin-top: 5rem;
     }
     h2 {
-      color: $primary-color;
+      cursor: pointer;
       border-bottom: 5px solid;
       padding-bottom: 1rem;
       border-width: 5px;
       border: 4px #c90a0a solid;
-      border-radius: 10px;
     }
 }
-  
+
+#song-list {
+  h2 {
+    border-radius: 10px;
+    &:not(:first-child) {
+      background-color: $primary-color;
+      &:hover {
+        background-color: #58ace4;
+        transition: 500ms;
+      }
+    }
+  }
+}
+//Song info
+.song-details {
+  display: none;
+  padding-left: 20px;
+}
+
+.song-details.open {
+  display: block;
+  border: 3px rgb(0, 0, 0) solid;
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
 
 //Footer styling
 footer {
@@ -58,6 +82,7 @@ footer {
     height: 100%;
     background-color: rgb(222, 30, 30);
     border: 4px black solid;
+    
 }
 //RESPONSIVE MEDIA QUERIES
 @media (max-width: 480px) {
@@ -95,23 +120,18 @@ footer {
 section {
   padding: 1rem;
   article {
-    background-color: rgb(227, 227, 227);
     margin-top: 5rem;
     border-radius: 10px;
-    
     h2 {
-      color: $primary-color;
-      border-bottom: 5px solid $third-color;
       padding-bottom: 1rem;
       border-width: 5px;
       border: 4px rgb(0, 0, 0) solid;
       border-radius: 10px;
-      font-size: 1rem;
+      font-size: 1.5rem;
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      
     }
-
   }
-  
 }
 body {
   background: linear-gradient(to bottom right, #be0808d2, #1628eacf);
@@ -137,63 +157,3 @@ body {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-// Navigation styling
-// nav {
-//   ul {
-//     list-style: none;
-//     padding: 0;
-//     display: flex;
-//     justify-content: center;
-
-//     li {
-//       margin: 0 15px;
-
-//       a {
-//         color: white;
-//         text-decoration: none;
-
-//         &:hover {
-//           text-decoration: underline;
-//         }
-//       }
-//     }
-//   }
-// }
-
-
-
-// // Form styling
-// form.contactForm {
-//   input[type="text"],
-//   input[type="email"],
-//   textarea {
-//     width: 100%;
-//     padding: 10px;
-//     margin-bottom: 10px;
-//     border: 1px solid #ccc;
-//     border-radius: 5px;
-//   }
-
-//   input[type="submit"] {
-//     background-color: $primary-color;
-//     color: white;
-//     border: none;
-//     padding: 10px 20px;
-//     cursor: pointer;
-
-//     &:hover {
-//       background-color: darken($primary-color, 10%);
-//     }
-//   }
-// }
